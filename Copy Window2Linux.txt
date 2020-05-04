@@ -1,0 +1,50 @@
+Copy from Windows 10 to Linux O/S (centos 8)
+
+Download pscp.exe from following link:-
+
+Install, it on Windows 10 machine and issue to following commands to updoad and dowload from Centos OS
+
+Copy something on Windows 10 to Centos 8
+----------------------------------------
+
+After installation, issue the commands from Windows, cmd as follows
+
+copy Windows 10 to Linux 8
+--------------------------
+
+C:\Users\User\Downloads>pscp -scp ChromeSetup.exe root@192.168.1.106:/root
+
+copy to root folder in centos 8
+--------------------------------
+
+[root@localhost ~]# ls
+
+anaconda-ks.cfg  Documents  Videos
+ChromeSetup.exe  Downloads  Pictures    Templates           winscp
+Desktop          Music      Public    
+
+Copy Centos 8 to Windows 10 (Command has been issued from window 10 OS)
+------------------------------------------------------------------------
+
+C:\Users\User\Downloads>pscp -scp root@192.168.1.106:/root/anaconda-ks.cfg C:\Users\User\Downloads
+
+NB:- If it is large file or folder, convert it into tar file and transfer from Windows 10 to centos 8 as below.
+
+
+C:\Users\User\Downloads>tar --help
+Usage:
+  List:    tar -tf <archive-filename>
+  Extract: tar -xf <archive-filename>
+  Create:  tar -cf <archive-filename> [filenames...]
+  Help:    tar --help
+
+C:\Users\User\Downloads>tar -cf myvbox.tar VBox-6.1.6
+
+
+C:\Users\User\Downloads>pscp -scp myvbox.tar root@192.168.1.106:/root
+root@192.168.1.106's password:
+myvbox.tar                | 173202 kB | 43300.6 kB/s | ETA: 00:00:00 | 100%
+
+
+
+
