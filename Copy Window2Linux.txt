@@ -1,6 +1,6 @@
 Copy from Windows 10 to Linux O/S (centos 8)
 
-Download pscp.exe from following link:-
+Download pscp.exe from following link:- https://github.com/ade9alwis/winscp/blob/master/pscp.exe
 
 Install, it on Windows 10 machine and issue to following commands to updoad and dowload from Centos OS
 
